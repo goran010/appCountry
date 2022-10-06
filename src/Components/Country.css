@@ -1,0 +1,47 @@
+.white {
+  color: hsl(200, 15%, 8%);
+  background-color: white;
+}
+.black {
+  color: white;
+  background-color: hsl(209, 23%, 22%);
+}
+.country_card {
+  display: flex;
+  flex-direction: column;
+  height: 345px;
+  width: 280px;
+  border-radius: 5px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.281) 0px 5px 15px;
+}
+.country_card:hover {
+  transform: scale(1.015);
+  transition: all 0.2s ease-in;
+}
+.country_image {
+  height: 47%;
+}
+.country_data {
+  height: 53%;
+  padding: 1.3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.country_data_title {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.country_data > h3 {
+  font-weight: 300;
+  font-size: 1rem;
+  margin-bottom: 0.15rem;
+  font-weight: 600;
+  width: fit-content;
+}
+.country_data > h3 > span {
+  font-weight: 300;
+}

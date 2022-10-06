@@ -1,0 +1,92 @@
+.white {
+  color: hsl(200, 15%, 8%);
+  background-color: white;
+}
+.black {
+  color: white;
+  background-color: hsl(207, 26%, 17%);
+}
+.main_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 3rem;
+  padding-top: 4.5rem;
+}
+.options {
+  display: flex;
+  width: 85%;
+  max-width: 1400px;
+  padding: 3rem 0rem;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+}
+.search_country_container {
+  padding: 0rem 2.3rem;
+  border-radius: 5px;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.search_country_input {
+  padding: 1rem 1.5rem;
+  width: 95%;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+}
+.white::placeholder {
+  color: hsl(0, 0%, 52%);
+}
+.black::placeholder {
+  color: white;
+}
+.search_country_svg {
+  height: 1rem;
+}
+
+.options_select {
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+  border: none;
+  border-right: 1rem solid transparent;
+  font-size: 1rem;
+  font-weight: 600;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+select option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+select > option {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 2rem;
+}
+@media only screen and (max-width: 600px) {
+  .options {
+    width: 90%;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 0.5rem;
+  }
+  .search_country_container {
+    width: 100%;
+    padding: 0rem 2rem;
+  }
+  .search_country_input {
+    padding-left: 1rem;
+    padding-right: 0.5rem;
+  }
+  .options_select {
+    width: 60%;
+    font-size: 0.9rem;
+    padding-right: 0.5rem;
+  }
+}

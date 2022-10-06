@@ -1,0 +1,177 @@
+.white1 {
+  color: hsl(200, 15%, 8%);
+  font-weight: 600;
+  background-color: hsl(0, 0%, 98%);
+}
+.black3 {
+  background-color: hsl(209, 26%, 17%);
+  color: white;
+}
+.modalContent {
+  width: 100%;
+  padding: 0% 7.5%;
+  margin-top: 9rem;
+  display: flex;
+  flex-direction: column;
+}
+.modalContent > button {
+  margin-bottom: 5rem;
+  font-size: 0.9rem;
+}
+.modal-btn {
+  align-self: start;
+  justify-self: start;
+  border: none;
+  padding: 0.5rem 2.2rem;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.245) 2px 3px 7px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+.country-data {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 10%;
+}
+.modal-img {
+  width: 32vw;
+  height: 22vw;
+}
+.aside {
+  width: 100%;
+  align-self: center;
+  display: grid;
+  grid-template-areas:
+    "firstdiv seconddiv"
+    "borders borders";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  row-gap: 4rem;
+}
+
+.country-data-firstDiv {
+  grid-area: firstdiv;
+  width: 100%;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.country-data-secondDiv {
+  grid-area: seconddiv;
+  width: 100%;
+  height: min-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-weight: 0.5rem;
+  padding-top: 3.5rem;
+}
+.country-data-firstDiv > h1 {
+  font-weight: 800;
+  margin-bottom: 1.3rem;
+  font-size: 1.6rem;
+}
+.country-data-firstDiv > h3 {
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.country-data-secondDiv > h3 {
+  width: 100%;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.country-data-firstDiv > h3 > span {
+  font-weight: 300;
+}
+.country-data-secondDiv > h3 > span {
+  font-weight: 300;
+}
+.modal-border-countries {
+  grid-area: borders;
+  width: 100%;
+  display: flex;
+}
+.modal-border-countries > h3 {
+  width: 10%;
+  min-width: 8rem;
+  font-size: 1rem;
+  font-weight: 600;
+  height: min-content;
+  justify-self: center;
+  align-self: center;
+
+  margin-right: 0.5rem;
+}
+.modal-border-countries > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  width: 100%;
+  height: min-content;
+  justify-self: flex-start;
+  align-self: center;
+}
+.modal-border-countries > div > button {
+  padding: 0.4rem 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 300;
+  display: block;
+}
+@media only screen and (max-width: 700px) {
+  .modal {
+    width: 100%;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .modalContent{
+margin-top: 9rem;
+  }
+  .modalContent > button {
+    margin-bottom: 4rem;
+  }
+  .modal-img {
+    width: 100%;
+    height: auto;
+    max-height: 25vh;
+    align-self: center;
+    margin-bottom: 3rem;
+  }
+  .country-data {
+    display: flex;
+    flex-direction: column;
+  }
+  .aside{
+    display: flex;
+    flex-direction: column;
+    gap:2.5rem
+  }
+  .country-data-secondDiv{
+    padding-top: 0rem;
+  }
+  .modal-border-countries {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .modal-border-countries > h3 {
+    align-self: flex-start;
+    width: 100%;
+    font-size: 1rem;
+  }
+  .modal-border-countries > div {
+    display: flex;
+    padding-bottom: 2rem;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .modal-border-countries > div > button {
+    padding: 0.4rem 2rem;
+    font-size: 0.8rem;
+    border-radius: 3px;
+   
+  }
+}
